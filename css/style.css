@@ -1,115 +1,172 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/backgr.png) center no-repeat;
-  background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/backgr.png) center no-repeat;
+    background-size: cover;
 }
 
 .page {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/ramka.png) center / 100vw 100vh no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/ramka.png) center / 100vw 100vh no-repeat;
 }
 
 .header {
-  width: 100vw;
-  height: 14vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  border: 2px solid aqua;
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid aqua;
 }
 
 .header h1 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 5vh;
-  color: #fff;
-  padding-top: 2vh;
-
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5vh;
+    color: #fff;
+    padding-top: 2vh;
 }
 
 .main_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 
 .top_row {
-  width: 75vw;
-  height: 45vh;
-  margin-left: 18vw;
-  display: flex;
-  justify-content: space-around;
-  border: 2px solid #f00;
+    width: 75vw;
+    height: 45vh;
+    margin-left: 18vw;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #f00;
 }
 
-.life, .hronos {
-  width: 30vw;
-  border: 2px solid #f0e;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  box-sizing: border-box;
-  padding-top: 3vh;
+.life,
+.hronos {
+    width: 30vw;
+    border: 2px solid #f0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 3vh;
 }
 
-.img_life, 
-.img_hronos
- {
-  width: 90%;
-  max-width: 229px;
-  border: 2px solid #0f0;
+.img_life,
+.img_hronos {
+    width: 90%;
+    max-width: 229px;
+    /*border: 2px solid #0f0;*/
 }
 
-.img_life img, 
+.st_button {
+    font-size: 3vh;
+    color: #fff;
+    padding: 1vh;
+    margin: 1vh auto;
+    text-align: center;
+    background-color: #f0e;
+    border: 2px solid #0f0;
+    border-radius: 0.5em;
+}
+
+.st_button a {
+    color: #fff;
+}
+
+.st_button a:hover {
+    color: #0f0;
+}
+
+.img_life img,
 .img_hronos img,
 .img_works img,
 .img_theatre img,
-.img_about img
-{
-  width: 100%;
+.img_about img {
+    width: 100%;
+    border: 2px solid #0f0;
+    border-radius: 0.6em;
 }
 
 .words_quote {
-  width: 40vw;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: center;
-  padding-bottom: 0vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 4.5vh;
-  color: #fff;
-  border: 2px solid #f0e;
+    width: 40vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding-bottom: 0vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4.5vh;
+    color: #fff;
+    border: 2px solid #f0e;
 }
 
 .hronos {
-  width: 30vw;
-  border: 2px solid #f0e;
+    width: 30vw;
+    border: 2px solid #f0e;
 }
 
 .bottom_row {
-  width: 85vw;
-  height: 35vh;
-  box-sizing: border-box;
-  margin-left: 7.5vw;
-  display: flex;
-  justify-content: space-around;
-  border: 2px solid #f00;
+    width: 85vw;
+    height: 35vh;
+    box-sizing: border-box;
+    margin-left: 7.5vw;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #f00;
+}
+
+.works,
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #f96;
+}
+
+.theatre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid #f96;
+}
+
+.img_theatre {
+    box-sizing: border-box;
+    padding-top: 1vh;
 }
 
 .img_works,
 .img_theatre,
-.img_about
- {
-  width: 90%;
-  max-width: 229px;
-  border: 2px solid #0f0;
+.img_about {
+    width: 90%;
+    max-width: 229px;
+    /*border: 2px solid #0f0;*/
 }
 
-.img_theatre {
-  box-sizing: border-box;
-  margin-top: 10vh;
+.footer {
+    margin-top: 3.0vh;
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end;
+    /*border: 2px solid #0fa;*/
+    box-sizing: border-box;
+    padding-right: 4vw;
+    font-size: 2.4vh;
+    font-weight: 600;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer a:hover {
+    color: #fff;
 }
