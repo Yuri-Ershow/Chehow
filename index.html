@@ -18,6 +18,12 @@
     <div class="page">
         <header class="header">
             <h1>Антон Павлович Чехов</h1>
+            <div id="burger">
+                <span class="burger_line burger_line_first"></span>
+                <span class="burger_line burger_line_second"></span>
+                <span class="burger_line burger_line_third"></span>
+                <span class="burger_line burger_line_fourth"></span>
+            </div>
         </header>
         <div class="main_content">
             <div class="top_row">
@@ -57,11 +63,44 @@
                     <p class="st_button"><a href="pages/liter.html">Литература об А.П. Чехове</a></p>
                 </div>
             </div>
+
+            <div id="menu_main">
+                <ul class="menu">
+                    <li class="item_menu">
+                        <p class="st_button"><a href="pages/life.html">Жизнеописание</a></p>
+                    </li>
+                    <li class="item_menu">
+                        <p class="st_button"><a href="pages/works.html">Литературные произведения</a></p>
+                    </li>
+                    <li class="item_menu">
+                        <p class="st_button"><a href="pages/theatre.html">Пьесы для театра</a></p>
+                    </li>
+                    <li class="item_menu">
+                        <p class="st_button"><a href="pages/hronos.html">Краткая хронология</a></p>
+                    </li>
+                    <li class="item_menu">
+                        <p class="st_button"><a href="pages/liter.html">Литература об А.П. Чехове</a></p>
+                    </li>
+                </ul>
+            </div>
+
         </div>
         <footer class="footer">
             <p><a href="#">&#169 copy Yuri-Ershow 2020</a></p>
         </footer>
     </div>
+
+    <script>
+        var x = document.getElementById("burger");
+        x.addEventListener("click", myFunction);
+
+        function myFunction() {
+            var element = document.getElementById("menu_main");
+            element.classList.toggle("open");
+            x.classList.toggle("burger_active");
+        }
+    </script>
+
 </body>
 
 </html>
